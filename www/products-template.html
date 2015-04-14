@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <titleFood Categories</title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+
+     
+    -->
+    <link href="css/ionicons.css" rel="stylesheet">
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.shop.js"></script>
+
+</head>
+
+<body ng-app="starter">
+
+
+
+    <ion-pane>
+        <ion-header-bar class="bar-positive">
+            <h1 class="title">Calorie Counter</h1>
+        </ion-header-bar>
+
+        <ion-content>
+		            <div id="site">
+                <div id="content">
+                    <div id="products">
+
+                        <div class="list card">
+
+                            <div class="item item-avatar">
+                                <img src="images/wine1.jpg" alt="">
+                                <h1>Food Category Name</h1>
+                                
+                            </div>
+
+                            <div class="item item-image">
+                                <div class="product-image">
+                                    <img src="images/wine1.jpg" alt="" />
+                                </div>
+                            </div>
+
+
+                            <div class="product-description" data-name="Food Name" data-price="600">
+                                <h3 class="product-name">Food Description</h3>
+                                <p class="product-price">600</p>
+                                <form class="add-to-cart" action="cart.html" method="get">
+                                    <div>
+                                        <label for="qty-1">Quantity</label>
+                                        <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+                                    </div>
+                                    <p>
+                                        <input type="submit" value="Add" class="button button-assertive" />
+                                    </p>
+                                </form>
+                            </div><!-- end div class="product-description" -->
+                        </div>
+                    </div>
+                        
+                         </div>   
+                        </div>
+                        </div> 
+        </ion-content>
+        
+
+        <ion-footer-bar align-title="left" class="bar-positive">
+            <div class="buttons">
+                <a href="index.html" class="button"><i class="icon ion-home"></i> Home</a>
+            </div>
+			
+			<div class="buttons">&nbsp;
+                <a href="list.html" class="button"><i class="icon ion-ios-nutrition"></i> Food Categories</a>
+            </div>
+            <h1 class="title">footer text</h1>
+        </ion-footer-bar>
+    </ion-pane>
+</body>
+
+</html>
