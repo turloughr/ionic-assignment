@@ -31,7 +31,7 @@
 
 .product-name {
     text-align: center;
-    color: #fc0;
+    color: #fff;
     margin: 0;
     font-size: 1.4em;
     padding-bottom: 0.2em;
@@ -46,8 +46,8 @@
     font-size: 1.2em;
     text-align: center;
     margin: 1em auto;
-    background: #fff;
-    color: #800;
+    background: #7851A9;
+    color: #fff;
     line-height: 4;
     border-radius: 50%;
 }

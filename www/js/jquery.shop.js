@@ -459,114 +459,13 @@
 		
 		_calculateShipping: function( qty ) {
 			var shipping = 0;
-			if( qty >= 6 ) {
-				shipping = 0;
-			}
-			if( qty >= 12 && qty <= 30 ) {
-				shipping = 0;	
-			}
-			
-			if( qty >= 30 && qty <= 60 ) {
-				shipping = 0;	
-			}
-			
-			if( qty > 60 ) {
-				shipping = 0;
+			if( qty >= 1 ) {
+				shipping = -2500;
 			}
 			
 			return shipping;
 		
 		},
-		
-		/* Validates the checkout form
-		 * @param form Object the jQuery element of the checkout form
-		 * @returns valid Boolean true for success, false for failure
-		 */
-		 
-		 
-		
-		_validateForm: function( form ) {
-			var self = this;
-			var fields = self.requiredFields;
-			var $visibleSet = form.find( "fieldset:visible" );
-			var valid = true;
-			
-			form.find( ".message" ).remove();
-			
-		  $visibleSet.each(function() {
-			
-			$( this ).find( ":input" ).each(function() {
-				var $input = $( this );
-				var type = $input.data( "type" );
-				var msg = $input.data( "message" );
-				
-				if( type == "string" ) {
-					if( $input.val() == fields.str.value ) {
-						$( "<span class='message'/>" ).text( msg ).
-						insertBefore( $input );
-						
-						valid = false;
-					}
-				} else {
-					if( !fields.expression.value.test( $input.val() ) ) {
-						$( "<span class='message'/>" ).text( msg ).
-						insertBefore( $input );
-						
-						valid = false;
-					}
-				}
-				
-			});
-		  });
-			
-			return valid;
-		
-		},
-		
-		/* Save the data entered by the user in the ckeckout form
-		 * @param form Object the jQuery element of the checkout form
-		 * @returns void
-		 */
-		
-		
-		_saveFormData: function( form ) {
-			var self = this;
-			var $visibleSet = form.find( "fieldset:visible" );
-			
-			$visibleSet.each(function() {
-				var $set = $( this );
-				if( $set.is( "#fieldset-billing" ) ) {
-					var name = $( "#name", $set ).val();
-					var email = $( "#email", $set ).val();
-					var city = $( "#city", $set ).val();
-					var address = $( "#address", $set ).val();
-					var zip = $( "#zip", $set ).val();
-					var country = $( "#country", $set ).val();
-					
-					self.storage.setItem( "billing-name", name );
-					self.storage.setItem( "billing-email", email );
-					self.storage.setItem( "billing-city", city );
-					self.storage.setItem( "billing-address", address );
-					self.storage.setItem( "billing-zip", zip );
-					self.storage.setItem( "billing-country", country );
-				} else {
-					var sName = $( "#sname", $set ).val();
-					var sEmail = $( "#semail", $set ).val();
-					var sCity = $( "#scity", $set ).val();
-					var sAddress = $( "#saddress", $set ).val();
-					var sZip = $( "#szip", $set ).val();
-					var sCountry = $( "#scountry", $set ).val();
-					
-					self.storage.setItem( "shipping-name", sName );
-					self.storage.setItem( "shipping-email", sEmail );
-					self.storage.setItem( "shipping-city", sCity );
-					self.storage.setItem( "shipping-address", sAddress );
-					self.storage.setItem( "shipping-zip", sZip );
-					self.storage.setItem( "shipping-country", sCountry );
-				
-				}
-			});
-		}
 	};
 	
 	$(function() {
