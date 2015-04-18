@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Calorie Counter</title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <link href="css/ionicons.css" rel="stylesheet">
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/fjquery.shop.js"></script>
+
+</head>
+
+<body ng-app="starter">
+
+    <ion-pane>
+        <ion-header-bar class="bar-royal">
+            <h1 class="title">Calorie Counter</h1>
+        </ion-header-bar>
+        <ion-content>
+
+            <div id="site">
+                <header id="masthead">
+                    <h1>Calorie Counter <span class="tagline">blah blah</h1>
+                </header>
+                <div id="content">
+                    <h1>Consumption table</h1>
+                    <form id="shopping-cart" action="fcart.html" method="get">
+                        <table class="shopping-cart">
+							<thead>						
+                                <tr>
+                                    <td scope="col">Item(s)</td>
+                                    <td scope="col">Quantity</td>
+                                    <td scope="col">Calories</td>
+                                </tr>
+							</thead>	
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                        <p id="sub-total">
+                            <strong>Total</strong>: <span id="stotal"></span>
+                        </p>
+                        <ul id="shopping-cart-actions">
+                            <li>
+                             <!--   <input type="submit" name="update" id="update-cart" class="button" value="Update Cart" /> -->
+                            </li>
+                            <li> 
+                                <input type="submit" name="delete" id="empty-cart" class="button icon ion-ios-nutrition" value="Clear" />
+                            </li>
+                            <li> 
+                             <!--   <a href="flist.html" class="button icon ion-ios-nutrition"> Food Categories</a> -->
+                            </li>
+                            <li> 
+                                <a href="fcheckout.html" class="button icon ion-calculator"> Consumption Report</a>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </ion-content>
+
+        <ion-footer-bar align-title="left" class="bar-royal">
+            <div class="buttons">
+                <a href="index.html" class="button"><i class="icon ion-home"></i> Home</a>
+            </div>
+			
+			<div class="buttons">&nbsp;
+                <a href="list.html" class="button"><i class="icon ion-ios-nutrition"></i> Food Categories</a>
+            </div>
+            <h1 class="title">footer text</h1>
+        </ion-footer-bar>
+    </ion-pane>
+</body>
+
+</html>
