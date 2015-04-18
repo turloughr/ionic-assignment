@@ -32,7 +32,7 @@
 			this.currency = "&nbsp;"; // HTML entity of the currency to be displayed in the layout
 			this.currencyString = "&nbsp;"; // Currency symbol as textual string
 			this.paypalCurrency = "EUR"; // PayPal's currency code
-			this.paypalBusinessEmail = "name@address.com "; // Your Business PayPal's account email address
+			this.paypalBusinessEmail = "garethshaughs-facilitator@hotmail.com "; // Your Business PayPal's account email address
 			this.paypalURL = "https://www.sandbox.paypal.com/cgi-bin/webscr"; // The URL of the PayPal's form
 			
 			// Object containing patterns for form validation
@@ -462,9 +462,10 @@
 			if( qty >= 1 ) {
 				shipping = -2500;
 			}
+			
 			return shipping;
 		
-		}
+		},
 	};
 	
 	$(function() {

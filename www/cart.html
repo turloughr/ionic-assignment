@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title>Calorie Counter</title>
+    <title>Calorie Counter</title><!-- page title -->
 
-    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet"><!-- ionic style sheet-->
+    <link href="css/style.css" rel="stylesheet"><!-- app style sheet controls main UI display-->
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -21,72 +21,74 @@
     <script src="cordova.js"></script>
 
     <!-- your app's js -->
-    <script src="js/app.js"></script>
+    <script src="js/app.js"></script><!-- app javascript-->
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.shop.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- jquery library-->
+    <script type="text/javascript" src="js/jquery.shop.js"></script><!-- shopping cart js used to count calories-->
 
 </head>
 
-<body ng-app="starter">
+<body ng-app="starter"><!-- angular starter-->
 
-    <ion-pane>
-        <ion-header-bar class="bar-royal">
-            <h1 class="title">Calorie Counter</h1>
-        </ion-header-bar>
-        <ion-content>
+    <ion-pane><!-- begin ion pane -->
+        <ion-header-bar class="bar-royal"><!-- ionic header -->
+            <h1 class="title">Calorie Counter</h1><!-- title -->
+        </ion-header-bar><!-- end header bar -->
+        <ion-content><!-- start content -->
 
-            <div id="site">
+            <div id="site"><!-- css and shop jquery ref -->
                 <header id="masthead">
-                    <h1>Calorie Counter <span class="tagline">blah blah</h1>
+                    <h1>Calorie Counter <span class="tagline"></h1>
                 </header>
-                <div id="content">
-                    <h1>Consumption table</h1>
-                    <form id="shopping-cart" action="cart.html" method="get">
-                        <table class="shopping-cart">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Item(s)</th>
-                                    <th scope="col">Quantity</th>
-                                    <th scope="col">Calories</th>
-                                </tr>
-                            </thead>
-                            <tbody>
+                <div id="content"><!-- counter content -->
+				The table below displays a list of all food consumed, the calories of food and the total calories consumed.<br>
+                    <h1>Food(s) Consumed</h1>
+					
+                    <form id="shopping-cart" action="cart.html" method="get"><!-- form with get method invocation -->
+                        <table class="shopping-cart"><!-- calorie counter aka shopping cart table -->
+                            <thead><!-- table header -->
+                                <tr><!-- table row -->
+                                    <td scope="col">Item(s)</td><!-- table row item -->
+                                    <td scope="col">Quantity</td><!-- table row item -->
+                                    <td scope="col">Calories</td><!-- table row item -->
+                                </tr><!-- end table row  -->
+                            </thead><!-- table header -->
+                            <tbody><!-- food items outputed here -->
 
                             </tbody>
                         </table>
-                        <p id="sub-total">
-                            <strong>Total</strong>: <span id="stotal"></span>
+                        <p id="sub-total"><!-- total number of calories consumed -->
+                            <strong>Calories consumed</strong>: <span id="stotal"></span>
                         </p>
-                        <ul id="shopping-cart-actions">
-                            <li>
+                        <ul id="shopping-cart-actions"><!-- counter aka shopping cart controller list -->
+                            <li><!-- list item-->
                              <!--   <input type="submit" name="update" id="update-cart" class="button" value="Update Cart" /> -->
                             </li>
                             <li>
-                                <input type="submit" name="delete" id="empty-cart" class="button" value="Clear" />
+                                <input type="submit" name="delete" id="empty-cart" class="button" value="Clear" /><!-- clear cart -->
                             </li>
                             <li> 
                              <!--   <a href="list.html" class="button icon ion-ios-nutrition"> Food Categories</a> -->
                             </li>
                             <li>
-                                <a href="checkout.html" class="button icon ion-calculator"> Consumption Report</a>
+                                <a href="checkout.html" class="button icon ion-calculator"> Consumption Report</a><!-- view report aka shopping cart checkout -->
                             </li>
                         </ul>
-                    </form>
+                    </form><!-- end form -->
                 </div>
             </div>
-        </ion-content>
+        </ion-content><!-- end ionic content -->
 
-        <ion-footer-bar align-title="left" class="bar-royal">
+        <ion-footer-bar align-title="left" class="bar-royal"><!-- ionic footer-->
             <div class="buttons">
-                <a href="index.html" class="button"><i class="icon ion-home"></i> Home</a>
+                <a href="index.html" class="button"><i class="icon ion-home"></i> Home</a><!-- ionic button -->
             </div>
 			
 			<div class="buttons">&nbsp;
-                <a href="list.html" class="button"><i class="icon ion-ios-nutrition"></i> Food Categories</a>
+                <a href="list.html" class="button"><i class="icon ion-ios-nutrition"></i> Food Categories</a><!-- ionic button -->
             </div>
-            <h1 class="title">footer text</h1>
-        </ion-footer-bar>
+            <h1 class="title">&copy; 2015 An Roinn Sláinte /  Dept. of Health, Ireland.</h1><!-- ionic footer title-->
+        </ion-footer-bar><!-- end ionic footer -->
     </ion-pane>
 </body>
 
