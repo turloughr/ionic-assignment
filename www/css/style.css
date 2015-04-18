@@ -36,7 +36,6 @@
     font-size: 1.4em;
     padding-bottom: 0.2em;
     border-bottom: 1px dotted #666;
-    text-transform: uppercase;
     letter-spacing: 0.1em;
 }
 
@@ -50,6 +49,16 @@
     color: #fff;
     line-height: 4;
     border-radius: 50%;
+}
+
+.intro-name {
+    text-align: left;
+    color: #fff;
+    margin: 0;
+    font-size: 1.4em;
+    padding-bottom: 0.2em;
+    border-bottom: 1px dotted #666;
+    letter-spacing: 0.1em;
 }
 
 form.add-to-cart div,
