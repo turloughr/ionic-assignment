@@ -33,6 +33,8 @@ A copy of the source code can by found on https://github.com/turloughr/ionic-ass
 
 2. The calorie counter is in essence a shopping cart. I used "A complete shopping cart built with jQuery and sessionStorage" by Gabriele Romanato as the basis for this. See: https://github.com/gabrieleromanato/jQuery-sessionStorage-shopping-cart 
 
+3. Calories - Food calorie counter for a selection of popular brands and basics. See: http://www.weightlossresources.co.uk/calories/calorie_counter.htm
+
 ##Notice
 Images and logos were sourced from the Internet via Google image search. Copyright of images and logo are held by their respective owners. In NO way were the copyright holders associated in any way in the development of this app. 
 
