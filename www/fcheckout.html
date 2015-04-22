@@ -54,9 +54,9 @@
                     <table id="checkout-cart" class="shopping-cart"><!-- calorie counter aka shopping cart table -->
                         <thead><!-- table header -->
                             <tr><!-- table row -->
-                                <td scope="col">Item</th><!-- table row item -->
-                                <td scope="col">Quantity</th><!-- table row item -->
-                                <td scope="col">Calories</th><!-- table row item -->
+                                <th scope="col">Item</th><!-- table row item -->
+                                <th scope="col">Quantity</th><!-- table row item -->
+                                <th scope="col">Calories</th><!-- table row item -->
                             </tr><!-- end table row  -->
                         </thead><!-- table header -->
                         <tbody><!-- food items outputed here -->
@@ -65,28 +65,25 @@
                     </table>
                     <div id="pricing">
 
-                        <p id="shipping"><!-- total number of calories consumed -->
-                           <strong>Less recommended daily calorie intake for a woman (2000 calories)</strong>: <span id="sshipping"></span> 
+                        <p id="shipping"><!-- total consumption for a man -->
+                           <strong>Less recommended total daily calorie intake for a woman</strong>:<span id="sshipping"></span> 
                         </p>
 
-                        <p id="sub-total" class="purple">
-                            <strong>Calories Exceeded</strong>: <span id="stotal"></span>
+                        <p id="sub-total" class="purple"><!-- Local stylesheet reference -->
+                            <strong>Calorie intake above recommended daily limit</strong>:<span id="stotal"></span>
                         </p>
 						<h3>
 						Explanatory text
 						</h3>
-						The recommended daily* calorie intake for an average woman who wishes to maintain her weight is 2000 calories. 
-						A positive calories exceeded number indicates the amount of calories you over-eat for a given day. 
-						A negative number indicates that you have eat less than the recommended daily calorie intake. 
-						Women who are trying to lose weight should stick to a daily intake of 1200 calories a day. This includes three meals of about 300 calories each and a total of 300 calories in snacks. 
-						<p></p>
-						<p>Note * clicking on <a href="checkout.html" class="button icon ion-calculator"> Consumption Report</a> indicates calorie intake for a given day. If you click twice during a session, the app will assume you wish to calculate your intake for two days.                    </div>
+						The recommended daily* calorie intake for an average woman who wishes to maintain her weight is 2000 calories. A positive 'calories exceeded' number indicates the amount of calories you exceed for a given day. A negative number indicates that you have ate less than the recommended daily calorie intake. Women who are trying to lose weight should stick to a daily intake of 120 calories. Each meal should contain 300 calories and snacks should total 300 calories a day.
+						
+						</div>
 
                     
 	</div>
 	
 	
-
+ 
 </div>
             
         </ion-content><!-- end ionic content -->

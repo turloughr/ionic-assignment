@@ -66,18 +66,24 @@
                     <div id="pricing">
 
                         <p id="shipping"><!-- total consumption for a man -->
-                           <strong>Less recommended total daily calorie intake for a man</strong>:<span id="sshipping"></span> 
+                           <strong>Less recommended daily calorie intake for a man (2500 calories)</strong>: <span id="shipping"></span> 
                         </p>
+<p id="demo"></p>
 
+<script>
+var x = 100
+var y = 150;
+document.getElementById("demo").innerHTML = x - y;
+</script>
                         <p id="sub-total" class="purple"><!-- Local stylesheet reference -->
-                            <strong>Calorie intake above recommended daily limit</strong>:<span id="stotal"></span>
+                            <strong>Calories Exceeded</strong>: <span id="stotal"></span>
                         </p>
 						<h3>
 						Explanatory text
 						</h3>
-						The recommended daily* calorie intake for an average man who wishes to maintain his weight is 2500 calories. A positive 'calories exceeded' number indicates the amount of calories you exceed for a given day. A negative number indicates that you have ate less than the recommended daily calorie intake. Men who are trying to lose weight should stick to a daily intake of 1800 calories. Each meal should contain 450 calories and snacks should total 450 calories a day.
-						
-						</div>
+						The recommended daily* calorie intake for an average man who wishes to maintain his weight is 2500 calories. A positive 'calories exceeded' number indicates the amount of calories you over-ate for a given day. A negative number indicates that you have ate less than the recommended daily calorie intake. Men who are trying to lose weight should stick to a daily intake of 1800 calories. Each meal should contain 450 calories and snacks should total 450 calories a day.
+						<p></p>
+						<p>Note * clicking on <a href="checkout.html" class="button icon ion-calculator"> Consumption Report</a> indicates calorie intake for a given day. If you click twice during a session, the app will assume you wish to calculate your intake for two days.                    </div>
 
                     
 	</div>

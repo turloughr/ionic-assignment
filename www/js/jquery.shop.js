@@ -250,7 +250,7 @@
 			var self = this;
 		  if( self.$updateCartBtn.length ) {
 			self.$updateCartBtn.on( "click", function() {
-				var $rows = self.$formCart.find( "tbody tr" );
+				var $rows = self.$formCart.find( "tbody td" );
 				var cart = self.storage.getItem( self.cartName );
 				var shippingRates = self.storage.getItem( self.shippingRates );
 				var total = self.storage.getItem( self.total );
@@ -310,7 +310,7 @@
 					});
 					var shipping = self._convertString( self.storage.getItem( self.shippingRates ) );
 					var shippingRates = self._calculateShipping( qty );
-					var totalShipping = shipping + shippingRates;
+					var totalShipping = -2500;
 					
 					self.storage.setItem( self.shippingRates, totalShipping );
 				});

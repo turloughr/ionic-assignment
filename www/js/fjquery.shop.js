@@ -71,7 +71,7 @@
 				var cart = {};
 				cart.items = [];
 			
-				this.storage.setItem( this.cartName, this._toJSONString( fcart ) );
+				this.storage.setItem( this.cartName, this._toJSONString( cart ) );
 				this.storage.setItem( this.shippingRates, "0" );
 				this.storage.setItem( this.total, "0" );
 			}
@@ -250,7 +250,7 @@
 			var self = this;
 		  if( self.$updateCartBtn.length ) {
 			self.$updateCartBtn.on( "click", function() {
-				var $rows = self.$formCart.find( "tbody tr" );
+				var $rows = self.$formCart.find( "tbody td" );
 				var cart = self.storage.getItem( self.cartName );
 				var shippingRates = self.storage.getItem( self.shippingRates );
 				var total = self.storage.getItem( self.total );
@@ -310,7 +310,7 @@
 					});
 					var shipping = self._convertString( self.storage.getItem( self.shippingRates ) );
 					var shippingRates = self._calculateShipping( qty );
-					var totalShipping = shipping + shippingRates;
+					var totalShipping = -2000;
 					
 					self.storage.setItem( self.shippingRates, totalShipping );
 				});
@@ -460,7 +460,7 @@
 		_calculateShipping: function( qty ) {
 			var shipping = 0;
 			if( qty >= 1 ) {
-				shipping = -2000;
+				shipping = -2500;
 			}
 			return shipping;
 		
